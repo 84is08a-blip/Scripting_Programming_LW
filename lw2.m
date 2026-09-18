@@ -48,3 +48,16 @@ B = [A_in(10:end), A_in(1:9)];
 disp('generated vector B:');
 disp(B);
 
+
+
+
+A = input('Enter vector A (12 elements): ');
+
+mask = [false(1,9), true(1,3)];
+part1 = A(mask);
+part2 = A(1:9);
+
+B = [A(10:end), A(1:9)];
+
+disp('generated vector B:')
+disp(B)
